@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>罗外终极传说：黄一镔</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* 自定义字体 */
+        .font-ink {
+            font-family: 'Ma Shan Zheng', cursive;
+        }
+        .font-sans-sc {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        
+        /* 动态背景纹理 */
+        .bg-pattern {
+            background-color: #fdf6e3;
+            background-image: radial-gradient(#fbbf24 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        /* 简单的浮动动画 */
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(1deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        /* 强调文字的高亮效果 */
+        .highlight-text {
+            background: linear-gradient(120deg, #fcd34d 0%, #fcd34d 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 40%;
+            background-position: 0 90%;
+            transition: background-size 0.3s ease;
+        }
+        .highlight-text:hover {
+            background-size: 100% 100%;
+        }
+
+        /* 警戒线效果 */
+        .caution-tape {
+            background: repeating-linear-gradient(
+                45deg,
+                #fbbf24,
+                #fbbf24 10px,
+                #000 10px,
+                #000 20px
+            );
+        }
+    </style>
+</head>
+<body class="bg-pattern font-sans-sc text-gray-900 min-h-screen">
+
+    <!-- 顶部容器 -->
+    <div class="max-w-2xl mx-auto min-h-screen flex flex-col relative shadow-2xl bg-white/90 backdrop-blur-sm">
+        
+        <!-- 顶部标签 -->
+        <div class="w-full bg-black text-yellow-400 text-center py-2 font-bold tracking-widest uppercase text-xs sm:text-sm sticky top-0 z-50">
+            ⚠️ LUOHU FOREIGN LANGUAGES SCHOOL LEGEND FILE ⚠️
+        </div>
+
+        <!-- 核心人物展示区 -->
+        <header class="pt-12 pb-8 px-6 text-center relative overflow-hidden">
+            <!-- 装饰性背景字 -->
+            <div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-5 flex justify-center items-center">
+                <span class="text-[10rem] font-black transform -rotate-12">FAT</span>
+            </div>
+
+            <!-- 头像容器 -->
+            <div class="relative inline-block mb-6 group cursor-pointer">
+                <div class="absolute inset-0 bg-yellow-400 rounded-full transform translate-x-2 translate-y-2 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform"></div>
+                <div class="absolute inset-0 bg-black rounded-full transform -translate-x-1 -translate-y-1"></div>
+                <!-- 图片 -->
+                <div class="relative w-40 h-40 sm:w-48 sm:h-48 rounded-full border-4 border-black overflow-hidden animate-float bg-gray-200">
+                    <img src="https://i.imgs.ovh/2025/12/26/Cx0FVr.jpeg" 
+                         alt="黄一镔" 
+                         class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
+                         onerror="this.src='https://placehold.co/400x400?text=Pig+God'">
+                </div>
+                <!-- 标签 -->
+                <span class="absolute -bottom-2 -right-2 bg-rose-500 text-white text-xs font-bold px-3 py-1 border-2 border-black rotate-3">
+                    终极疯癫
+                </span>
+            </div>
+
+            <!-- 名字与头衔 -->
+            <h1 class="text-5xl sm:text-6xl font-black mb-2 font-ink text-black drop-shadow-lg">
+                黄一镔
+            </h1>
+            <p class="text-lg font-bold text-gray-600 mb-4 tracking-wider">
+                猪神黄昏 · 胖子戈多 · 快乐核弹
+            </p>
+
+            <!-- 关键词 -->
+            <div class="flex flex-wrap justify-center gap-2 mt-4">
+                <span class="px-3 py-1 bg-black text-yellow-400 text-sm font-bold skew-x-[-10deg]">#罗外传说</span>
+                <span class="px-3 py-1 bg-black text-white text-sm font-bold skew-x-[-10deg]">#肉感冲击波</span>
+                <span class="px-3 py-1 bg-black text-rose-400 text-sm font-bold skew-x-[-10deg]">#神经质</span>
+            </div>
+        </header>
+
+        <!-- 警告横幅 -->
+        <div class="caution-tape h-4 w-full"></div>
+        <div class="bg-yellow-400 px-6 py-4 border-b-4 border-black">
+            <h2 class="font-black text-xl flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+                WARNING: HIGH ENERGY
+            </h2>
+            <p class="font-bold text-sm mt-1 leading-relaxed">
+                罗外梧桐山脚下监测到活体荒诞反应！<span class="underline decoration-2 decoration-black">请勿在进食时阅读以下内容。</span>
+            </p>
+        </div>
+
+        <!-- 主要内容区 -->
+        <main class="px-6 py-8 space-y-8 flex-grow">
+
+            <!-- 第一段：登场 -->
+            <section class="relative">
+                <div class="absolute -left-4 top-0 text-6xl text-gray-100 font-black -z-10">01</div>
+                <h3 class="text-2xl font-ink font-bold mb-4 text-rose-600">活体荒诞体横空出世</h3>
+                <p class="text-lg leading-loose text-gray-700 text-justify">
+                    黄一镔带着<span class="highlight-text font-bold text-black px-1">全身脂肪的癫狂buff</span>横空出世，骑楼拱门挡不住他的肉感冲击波，∞形跑道跑不瘦他的神经质灵魂。
+                </p>
+                <div class="mt-4 p-4 bg-gray-50 border-l-4 border-black rounded-r-lg">
+                    <p class="italic text-gray-600 font-serif">
+                        “他是猪神黄昏降临人间的具象化，是胖子戈多迟到二十年的疯癫应答！”
+                    </p>
+                </div>
+            </section>
+
+            <hr class="border-dashed border-gray-300">
+
+            <!-- 第二段：日常 -->
+            <section class="relative">
+                <div class="absolute -left-4 top-0 text-6xl text-gray-100 font-black -z-10">02</div>
+                <h3 class="text-2xl font-ink font-bold mb-4 text-amber-600">胶原蛋白的哲学辩证</h3>
+                
+                <p class="text-lg leading-loose text-gray-700 mb-6">
+                    别问他的脂肪里藏着多少宇宙奥秘。在仙桐体育公园的草坪上，你会看到他一边啃鸡腿一边神经质地嘟囔：
+                </p>
+
+                <!-- 语录卡片 -->
+                <div class="bg-black text-yellow-400 p-6 rounded-lg transform -rotate-1 shadow-xl mx-2 mb-6 text-center">
+                    <p class="text-xl font-ink">“等待是脂肪的膨化剂”</p>
+                    <p class="text-xl font-ink mt-2">“猪神的黄昏就是碳水的狂欢！”</p>
+                </div>
+
+                <p class="text-lg leading-loose text-gray-700">
+                    千万别在数字化博物馆里和他对视，他会宣称<span class="font-bold border-b-2 border-rose-400">所有文物都在嫉妒他的胶原蛋白储量</span>。作为罗外“各美其美”校训的野生疯癫代言人，他的肥肉是对抗平庸的铠甲，他的神经质是解构无聊的武器。
+                </p>
+            </section>
+
+            <hr class="border-dashed border-gray-300">
+
+            <!-- 第三段：总结 -->
+            <section class="relative">
+                <div class="absolute -left-4 top-0 text-6xl text-gray-100 font-black -z-10">03</div>
+                <h3 class="text-2xl font-ink font-bold mb-4 text-purple-600">快乐核弹永不落幕</h3>
+                <p class="text-lg leading-loose text-gray-700 text-justify">
+                    他是胖子戈多却从不等谁，只会堵在15米宽的校园长廊里，强迫路人听他讲解<span class="highlight-text px-1 font-bold">“脂肪与存在主义的辩证关系”</span>。
+                </p>
+                <div class="mt-6 bg-yellow-50 p-5 rounded-xl border-2 border-yellow-400">
+                    <p class="text-base sm:text-lg leading-relaxed font-bold text-gray-800">
+                        罗外的骑楼为他遮风挡雨，梧桐山的清风都要绕着他的肥肉打旋——<span class="text-rose-600 text-xl">黄一镔！</span>
+                        <br><br>
+                        用脂肪堆砌神话，用神经质点燃校园。谁不爱这坨会思考、会发疯、会在罗外校园里横行霸道的<span class="bg-black text-white px-2 py-1 mx-1 transform inline-block rotate-2">快乐核弹</span>！
+                    </p>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- 底部 -->
+        <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+            <p class="mb-2">© 罗湖外语学校非官方认证</p>
+            <p class="font-mono text-xs opacity-50">DESIGNED FOR THE LEGENDARY FAT GODOT</p>
+            <div class="mt-4 flex justify-center gap-4">
+                <button onclick="copyLink()" class="px-4 py-2 border border-gray-600 rounded hover:bg-gray-800 transition text-xs">
+                    分享这份疯癫
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function copyLink() {
+            const dummy = document.createElement('input');
+            document.body.appendChild(dummy);
+            dummy.value = window.location.href;
+            dummy.select();
+            document.execCommand('copy');
+            document.body.removeChild(dummy);
+            alert('链接已复制！快去传播猪神传说！');
+        }
+    </script>
+</body>
+</html>
+
